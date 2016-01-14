@@ -9,13 +9,16 @@
     <link rel="stylesheet" href="{{ site.url }}/assets/css/main.css">
   </head>
   <body>
-    {% include top-wrapper.html %}
+    <div class="wrap">
+      {% include top-wrapper.html %}
 
-    <div class='main-wrap'>
-      {{ content }}
+      <div class='main-wrap'>
+        {{ content }}
+      </div>
+
+      {% include footer.html %}
     </div>
-
-    {% include footer.html %}
+    {% include slideNav.html %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="{{ site.url }}/assets/js/functions.js"></script>
   </body>

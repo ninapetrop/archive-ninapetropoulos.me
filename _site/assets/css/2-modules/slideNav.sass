@@ -1,0 +1,30 @@
+.wrap, .slideNav-container
+  position: absolute
+
+.slideNav-container
+  height: 100%
+  right: -15%
+  top: 0
+  width: 25%
+  z-index: 0
+  transition: right 0.4s
+  display: flex
+  flex-direction: column
+  padding-left: 20px
+  &.reveal
+    right: 0
+  nav
+    border: solid 1px red
+    padding-left: 20px
+    a
+      display: block
+      padding-bottom: 15px
+
+.wrap
+  left: 0
+  overflow: hidden
+  width: 100%
+  z-index: 100
+  transition: left 0.4s
+  &.reveal
+    left: -25%
