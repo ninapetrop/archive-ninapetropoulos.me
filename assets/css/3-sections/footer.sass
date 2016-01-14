@@ -1,7 +1,11 @@
 footer
   width: 1200px
   display: flex
+  @media (max-width: 786px)
+    flex-direction: column
   margin: auto
+  border-top: solid 1px $secondary-text
+  padding-top: 35px
   @media (max-width: 1000px)
     width: auto
   .left
